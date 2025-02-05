@@ -3,7 +3,7 @@ div.hma-width-full>.inner {
     padding: 0 5% !important;
 }
 
-.hma-gradient-bg p{
+.hma-gradient-bg p {
     background: linear-gradient(174deg, rgba(16, 17, 25, 0.7) 22%, rgba(176, 32, 36, 0.7) 82%);
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 50px;
@@ -12,32 +12,275 @@ div.hma-width-full>.inner {
     width: auto;
     display: inline-block;
 }
-.hma-gradient-bg p::before{
+
+.hma-gradient-bg p::before {
     font-size: 12px;
 }
-.hma-cont-row >.inner{
+
+.hma-cont-row>.inner {
     /* flex-direction: row !important;
     justify-content: start !important; */
     gap: 20px;
     /* align-items: center !important; */
 }
+
 .hma-author-sec.c-column>.inner.horizontal>div,
-.hma-cont-row.c-column>.inner.horizontal>div{
+.hma-cont-row.c-column>.inner.horizontal>div {
     flex: unset;
 }
-.hma-author-sec{
+
+.hma-author-sec {
     color: #ffffff;
 }
-.clr-grey{
+
+.clr-grey {
     color: #8A8B92;
 }
-.hma-author-sec span{
+
+.hma-author-sec span {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     display: block;
 }
-.hma-author-sec span:not(.clr-grey){
+
+.hma-author-sec span:not(.clr-grey) {
     font-weight: 500;
     margin-top: 5px;
+}
+
+.hma-footer-1 {
+    box-shadow: 0px 4px 4.8px 0px #00000040 !important;
+}
+
+.hma-footer-2 {
+    box-shadow: 0px 4px 100px 19px #FF90932E !important;
+}
+
+.hma-faq .faq-contained-child {
+    border: none !important;
+    border-top: 1px solid #333541 !important;
+}
+
+.hma-faq .faq-contained-child:last-child {
+    border-bottom: 1px solid #333541 !important;
+}
+
+.hma-faq .faq-contained-child .hl-faq-child-heading .hl-faq-child-heading-icon {
+    position: relative;
+}
+
+.hma-faq .faq-contained-child .hl-faq-child-heading:not(.active) .hl-faq-child-heading-icon::before {
+    background: url('https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/plus.svg') no-repeat 0 0;
+    background-color: #fff;
+    content: '' !important;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+}
+
+.hma-faq .faq-contained-child .hl-faq-child-heading.active .hl-faq-child-heading-icon::before {
+    background: url('https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/minus.svg') no-repeat 0 0;
+    background-color: #fff;
+    content: '' !important;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+}
+
+#faq-DkKwnt-s_s .hl-faq-child-heading .hl-faq-child-heading-icon:before,
+#faq-DkKwnt-s_s .hl-faq-child-heading.active .hl-faq-child-heading-icon:before {
+    content: "" !important;
+}
+
+.hma-social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hma-social-icons a img {
+    display: block;
+    width: 40px;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    .hma-header>.inner {
+        flex-direction: row !important;
+    }
+
+    .hma-faq .faq-contained-child .hl-faq-child-heading.active .hl-faq-child-heading-icon::before,
+    .hma-faq .faq-contained-child .hl-faq-child-heading:not(.active) .hl-faq-child-heading-icon::before {
+        right: -17px;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+    }
+
+    .hma-share-post>.inner {
+        align-items: flex-start;
+    }
+}
+
+/* CSS */
+
+/* Container for the entire benefits section */
+.hma-benefits-section {
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    /* background-color: #111; */
+    background: linear-gradient(148.85deg, rgba(28, 28, 32, 0.7) 22%, rgba(16, 17, 19, 0.7) 82%);
+    box-shadow: 0px 1px 0px 0px #FFFFFF1A inset;
+
+    /* Example dark background color */
+    border-radius: 20px;
+}
+
+/* Title for the section */
+.hma-benefits-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Grid to hold all benefit cards */
+.hma-benefits-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* Each benefit card */
+.hma-benefit-card {
+    display: flex;
+    flex-direction: column;
+    /* Slightly lighter dark background */
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Placeholder for icon wrapper */
+.hma-benefit-icon {
+    font-size: 2rem;
+    color: #f00;
+    /* Just an example color for the icon */
+    margin-bottom: 1rem;
+}
+
+/* Each benefit heading */
+.hma-benefit-heading {
+    font-size: 16px;
+    color: #8A8B92;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* CSS */
+
+/* The container for the sidebar banner */
+.hma-sidebar-banner {
+    position: relative;
+    width: 100%;
+    /* Adjust if needed; if it's a sidebar, you may give it a fixed width */
+    max-width: 530px;
+    margin: 15px auto;
+    background: linear-gradient(148.85deg, rgba(15, 15, 19, 0.7) 22%, rgba(15, 15, 19, 0.7) 82%);
+    box-shadow: 0px 0px 40px 20px #070D4F0D;
+
+    /* Background image & overlay handling */
+    background: url("https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/bg-review.jpeg") center center / cover no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Optional overlay for better text contrast on top of the background */
+.hma-sidebar-banner-overlay {
+    /* A subtle dark gradient overlay:
+       You can adjust the RGBA values to make text more/less visible. */
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6));
+    padding: 2rem 1.5rem;
+    border-radius: inherit;
+    /* Match container's radius */
+}
+
+/* Main heading */
+.hma-banner-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Red highlight text (e.g. "PRO ATHLETES" / "TRAIN") */
+.hma-highlight-text {
+    color: #e00;
+    /* Adjust your brand red color */
+}
+
+/* Supporting paragraph */
+.hma-banner-subtext {
+    color: #ccc;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+/* Call To Action button */
+.hma-banner-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+    margin-bottom: 1.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.hma-banner-button:hover {
+    background-color: #e00;
+    color: #fff;
+}
+
+/* Rating section */
+.hma-rating-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Replace this with your actual Google icon dimensions */
+.hma-google-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Rating score text (e.g., "5.0") */
+.hma-rating-score {
+    color: #ffc107;
+    /* Gold star color, adjust as needed */
+    font-weight: 700;
+}
+
+/* Rating descriptive text (e.g., "based on 200+ Google Reviews") */
+.hma-rating-text {
+    color: #ccc;
 }
