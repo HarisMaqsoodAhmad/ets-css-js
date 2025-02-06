@@ -1,24 +1,3 @@
-<span class="clr-grey">by Ryan Englebert</span>
-<span>Jan 5, 2025</span>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-<div class="hma-social-icons">
-    <a href="#" title="Facebook">
-        <img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/facebook.svg" alt="Facebook Icon">
-    </a>
-    <a href="#" title="Instagram">
-        <img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/instagram.svg" alt="Instagram Icon">
-    </a>
-    <a href="#" title="Twitter">
-        <img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/twitter.svg" alt="Twitter Icon">
-    </a>
-</div>
-
-
-
-
-
 <!-- HTML -->
 <section class="hma-benefits-section">
     <h2 class="hma-benefits-title">Benefits of Joining ETS</h2>
@@ -29,7 +8,7 @@
         <div class="hma-benefit-card">
             <!-- Icon placeholder: replace with your own icon component or <img> tag -->
             <div class="hma-benefit-icon">
-                <span><img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/speed.png" alt="Speed" /></span>
+                <span><img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/muscle.svg" alt="Muscle" /></span>
             </div>
             <h3 class="hma-benefit-heading">Data-Driven Training</h3>
         </div>
@@ -45,7 +24,7 @@
         <!-- BENEFIT 3 -->
         <div class="hma-benefit-card">
             <div class="hma-benefit-icon">
-                <span><img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/speed.png" alt="Speed" /></span>
+                <span><img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/diversity.svg" alt="Diversity" /></span>
             </div>
             <h3 class="hma-benefit-heading">Expert Coaching Team</h3>
         </div>
@@ -53,7 +32,7 @@
         <!-- BENEFIT 4 -->
         <div class="hma-benefit-card">
             <div class="hma-benefit-icon">
-                <span><img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/speed.png" alt="Speed" /></span>
+                <span><img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/calendar.svg" alt="Calendar" /></span>
             </div>
             <h3 class="hma-benefit-heading">Flexible Scheduling</h3>
         </div>
