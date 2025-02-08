@@ -177,7 +177,7 @@ div.hma-width-full>.inner {
     width: 100%;
     /* Adjust if needed; if it's a sidebar, you may give it a fixed width */
     max-width: 530px;
-    margin: 15px auto;
+    margin: 20px auto;
     background: linear-gradient(148.85deg, rgba(15, 15, 19, 0.7) 22%, rgba(15, 15, 19, 0.7) 82%);
     box-shadow: 0px 1px 50px 25px #FFFFFF1A inset;
 
@@ -185,7 +185,6 @@ div.hma-width-full>.inner {
     background: url("https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/bg-review.jpeg") center center / cover no-repeat;
     border-radius: 20px;
     border: 1px solid #FFFFFF1A;
-    margin-top: 35px;
     overflow: hidden;
     font-family: 'Inter', sans-serif;
 }
@@ -268,8 +267,8 @@ div.hma-width-full>.inner {
 /* Rating score text (e.g., "5.0") */
 .hma-rating-score {
     color: #ffc107;
-    /* Gold star color, adjust as needed */
     font-weight: 700;
+    font-family: "Inter", sans-serif;
 }
 
 /* Rating descriptive text (e.g., "based on 200+ Google Reviews") */
@@ -278,49 +277,6 @@ div.hma-width-full>.inner {
     font-size: 14px;
     line-height: 30.5px;
     font-weight: 400;
-}
-
-@media (max-width: 500px) {
-    .hma-header>.inner {
-        flex-direction: row !important;
-    }
-
-    .hma-faq .faq-contained-child .hl-faq-child-heading.active .hl-faq-child-heading-icon::before,
-    .hma-faq .faq-contained-child .hl-faq-child-heading:not(.active) .hl-faq-child-heading-icon::before {
-        right: -17px;
-        background-size: contain;
-        width: 18px;
-        height: 18px;
-    }
-
-    .hma-share-post>.inner {
-        align-items: flex-start;
-    }
-
-    .hma-benefits-section,
-    .hma-sidebar-banner {
-        max-width: 365px;
-    }
-}
-
-@media(max-width: 1024px) {
-
-    .hma-benefits-section,
-    .hma-sidebar-banner {
-        max-width: 335px;
-    }
-
-    .hma-banner-button {
-        font-size: 16px;
-    }
-
-    .hma-banner-heading {
-        font-size: 25px;
-    }
-
-    .hma-banner-subtext {
-        font-size: 12px;
-    }
 }
 
 /* Container for the entire stats section */
@@ -376,18 +332,15 @@ div.hma-width-full>.inner {
 /* Container that may have a background image (optional) */
 .hma-get-started-section {
     position: relative;
-    border-radius: 8px;
-    padding: 2rem;
-    /* If you have a background image, uncomment:
-    background: url("your-background.jpg") center/cover no-repeat;
-    */
-    background-color: #111;
-    /* fallback dark background if not using an image */
+    box-shadow: 0px 1px 50px 25px #FFFFFF1A inset;
+    background: url(https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/bg-review.jpeg) center center / cover no-repeat;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF1A;
 }
 
 /* Dark overlay to improve text contrast on background images */
 .hma-get-started-overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: #0A0A0CCC;
     border-radius: inherit;
     padding: 2rem;
 }
@@ -412,8 +365,8 @@ div.hma-width-full>.inner {
 }
 
 .hma-avatar {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #fff;
@@ -422,20 +375,23 @@ div.hma-width-full>.inner {
 
 /* The text next to the avatars (e.g. “— Join 200+ others …”) */
 .hma-join-text {
-    color: #ccc;
+    color: #fff;
     margin-left: 0.5rem;
     white-space: nowrap;
-    /* keeps the text on one line if you prefer */
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
 }
 
 /* Rating badge container (top-right corner in the row) */
 .hma-rating-badge {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
     padding: 0.25rem 0.75rem;
     gap: 0.3rem;
+    border: 1px solid #2A2B2D;
 }
 
 .hma-google-icon {
@@ -443,43 +399,44 @@ div.hma-width-full>.inner {
     height: auto;
 }
 
-.hma-rating-score {
-    color: #ffc107;
-    /* gold star color */
-    font-weight: 700;
-}
-
 /* e.g. “Based on 200+ Google Reviews” */
 .hma-rating-text {
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 /* Main content below the top row */
 .hma-get-started-content {
-    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hma-gs-heading {
-    font-size: 2rem;
+    font-size: 32px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    line-height: 29px;
+    letter-spacing: -1px;
 }
 
 /* Highlight color for the word “TODAY” */
 .hma-highlight {
     color: #e00;
-    /* your brand red */
 }
 
 /* Subheading below main heading */
 .hma-gs-subheading {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #ccc;
-    margin-bottom: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E6E6E7;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 /* Call-to-Action button */
@@ -488,16 +445,366 @@ div.hma-width-full>.inner {
     text-decoration: none;
     background-color: #fff;
     color: #111;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 900;
     padding: 0.75rem 2rem;
     border-radius: 9999px;
     transition: background-color 0.2s, color 0.2s;
+    font-family: 'Inter', sans-serif;
 }
 
 .hma-gs-button:hover {
-    background-color: #e00;
+    background: linear-gradient(160.55deg, rgba(160, 29, 33, 0.5) 0.25%, rgba(176, 32, 36, 0.7) 100.05%);
     color: #fff;
 }
+
 .hma-avatar:not(:first-child) {
-    margin-left: -25px;
+    margin-left: -15px;
+}
+
+.hma-get-started-btn-cont {
+    min-width: 220px;
+    width: 100%;
+    text-align: right;
+}
+
+/* Container for the entire “Pro Athlete Training” section */
+.hma-pro-training-section {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.hma-pro-training-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hma-pro-training-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.hma-pro-training-subtitle {
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+/* Swiper container */
+.hma-pro-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* For arrow positioning */
+}
+
+/* Each slide’s inner styling */
+.hma-slide {
+    border-radius: 20px;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: linear-gradient(148.85deg, rgba(34, 34, 38, 0.7) 22%, rgba(15, 15, 15, 0.7) 82%);
+    box-shadow: 0px 0px 0px 1px #FFFFFF0F inset;
+}
+
+.hma-slide-heading {
+    font-size: 25px;
+    color: #B02024;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+    margin-bottom: 1rem;
+}
+
+.hma-slide-text {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #E6E6E7;
+    line-height: 20.3px;
+}
+
+/* Swiper’s arrow buttons */
+.hma-swiper-btn-prev,
+.hma-swiper-btn-next {
+    color: #E6E6E7 !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(137deg, #32353B 4.87%, #24272C 75.88%);
+    box-shadow: 0.21px 1.07px 0px 0.64px #FFFFFF1A inset;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.hma-swiper-btn-prev::after,
+.hma-swiper-btn-next::after {
+    font-size: 15px !important;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: -4px !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: -4px !important;
+}
+
+.hma-swiper-btn-prev:hover,
+.hma-swiper-btn-next:hover {
+    color: #B02024;
+}
+
+.hma-swiper-pagination {
+    bottom: -2px !important;
+}
+
+/* Swiper’s pagination dots */
+.hma-swiper-pagination .swiper-pagination-bullet {
+    background-color: #B0B1B6;
+    opacity: 1;
+    height: 8px;
+}
+
+.hma-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #B02024;
+    width: 35px;
+    border-radius: 50px;
+}
+
+/**********************************************************/
+
+
+/* Main container styling */
+.hma-testimonial-section {
+    max-width: 465px;
+    margin: 20px auto;
+    padding: 2rem;
+    background: linear-gradient(148.85deg, rgba(31, 31, 36, 0.7) 22%, rgba(15, 16, 18, 0.7) 82%);
+    box-shadow: 0px 0px 0px 1px #FFFFFF0F inset;
+    border-radius: 20px;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+/* Header with section title and optional quote icon */
+.hma-testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.hma-testimonial-title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+}
+
+/* If you want a custom quote icon on the top-right corner */
+.hma-quote-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Swiper container for testimonials */
+.hma-testimonial-slider {
+    position: relative;
+    /* This can be narrower or wider than the container, if you choose */
+    overflow: hidden;
+}
+
+/* Each testimonial slide styling */
+.hma-testimonial-slide {
+    box-sizing: border-box;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* The testimonial text */
+.hma-testimonial-text {
+    font-size: 16px;
+    line-height: 23.2px;
+    color: #8A8B92;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Profile row at bottom */
+.hma-testimonial-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.hma-profile-image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    /* white ring around avatar */
+}
+
+.hma-profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.hma-profile-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #E6E6E7;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 23.2px;
+}
+
+.hma-profile-title {
+    color: #8A8B92;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    line-height: 20.3px;
+}
+
+.hma-verified-badge {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* Swiper arrows (similar to your existing approach) */
+.hma-testimonial-btn-prev,
+.hma-testimonial-btn-next {
+    color: #E6E6E7 !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(137deg, #32353B 4.87%, #24272C 75.88%);
+    box-shadow: 0.21px 1.07px 0px 0.64px #FFFFFF1A inset;
+    border-radius: 50%;
+    width: 32px !important;
+    height: 32px !important;
+    position: relative !important;
+}
+
+.hma-testimonial-btn-prev:hover,
+.hma-testimonial-btn-next:hover {
+    color: #B02024;
+    /* brand red hover color */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Adjust arrow icon size if needed */
+.hma-testimonial-btn-prev::after,
+.hma-testimonial-btn-next::after {
+    font-size: 15px !important;
+}
+
+/* Pagination dots */
+.hma-testimonial-pagination {
+    margin-bottom: 20px;
+}
+
+.hma-testimonial-pagination .swiper-pagination-bullet {
+    background-color: #B0B1B6;
+    opacity: 1;
+    height: 5px;
+    width: 5px;
+}
+
+.hma-testimonial-pagination .swiper-pagination-bullet-active {
+    background-color: #B02024;
+    width: 26px;
+    border-radius: 9999px;
+}
+
+.hma-testimonial-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0px;
+}
+
+
+@media(max-width: 1024px) {
+
+    .hma-benefits-section,
+    .hma-sidebar-banner,
+    .hma-testimonial-section {
+        max-width: 335px;
+    }
+
+    .hma-banner-button {
+        font-size: 16px;
+    }
+
+    .hma-banner-heading {
+        font-size: 25px;
+    }
+
+    .hma-banner-subtext {
+        font-size: 12px;
+    }
+
+    .hma-get-started-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hma-get-started-top {
+        gap: 15px;
+    }
+
+    .hma-get-started-btn-cont {
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .hma-header>.inner {
+        flex-direction: row !important;
+    }
+
+    .hma-faq .faq-contained-child .hl-faq-child-heading.active .hl-faq-child-heading-icon::before,
+    .hma-faq .faq-contained-child .hl-faq-child-heading:not(.active) .hl-faq-child-heading-icon::before {
+        right: -17px;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+    }
+
+    .hma-share-post>.inner {
+        align-items: flex-start;
+    }
+
+    .hma-benefits-section,
+    .hma-sidebar-banner,
+    .hma-testimonial-section {
+        max-width: 365px;
+    }
+
+    .hma-gs-heading {
+        font-size: 27px;
+    }
+
+    .hma-gs-button {
+        font-size: 18px;
+    }
 }

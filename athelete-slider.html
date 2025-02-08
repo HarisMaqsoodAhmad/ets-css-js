@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.hma-pro-slider', {
+      // Optional parameters
+      slidesPerView: 1,
+      loop: false,
+      speed: 600,
+
+      // If you included the arrow elements
+      navigation: {
+        nextEl: '.hma-swiper-btn-next',
+        prevEl: '.hma-swiper-btn-prev',
+      },
+
+      // If you included the pagination
+      pagination: {
+        el: '.hma-swiper-pagination',
+        clickable: true,
+      },
+
+      // Add breakpoints if you want more slides shown on wider screens, etc.
+      breakpoints: {
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      }
+    });
+  });
+</script>
+
+<section class="hma-pro-training-section">
+
+  <!-- Swiper container -->
+  <div class="swiper hma-pro-slider">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">ETS Dynamic Movement Preparation</h3>
+        <p class="hma-slide-text">
+          The ETS Dynamic Movement Preparation Plan (DMPP) uses neuromuscular specific exercises
+          to prepare the body for activity while addressing bio-motor abilities commonly used during sports.
+        </p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">Linear Speed + Technical Mastery</h3>
+        <p class="hma-slide-text">
+          Maximize acceleration and max speed potential while learning proper mechanics
+          to move as efficiently as possible.
+        </p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">Lateral Speed + Movement Mastery</h3>
+        <p class="hma-slide-text">
+          Learn and apply the techniques of how to move laterally by absorbing force
+          and becoming a master of movement.
+        </p>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">DECELERATION:</h3>
+        <p class="hma-slide-text">
+          Learn how to stop efficiently and safely as well as softly when jumping to avoid injury.
+        </p>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">STRENGTH: </h3>
+        <p class="hma-slide-text">
+          Personalized Strength movements that will meet each athlete exactly where they are at.  Our multi-dimensional
+          training systems include customized options for all that guarantee to produce unmatched results.
+        </p>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">POWER: </h3>
+        <p class="hma-slide-text">
+          Ability specific plyometric and medicine ball work to enhance explosiveness.  When ready, athletes will also
+          take part in our ETS Vertical & Horizontal Load to Explode training systems to maximize total body power
+          output.
+        </p>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">ENERGY SYSTEM DEVELOPMENT: </h3>
+        <p class="hma-slide-text">
+          Sport specific “conditioning” will be implemented into each athlete’s program if or when it is appropriate.
+        </p>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">PREHAB: </h3>
+        <p class="hma-slide-text">
+          Identify and correct muscular imbalances before an acute injury occurs.
+        </p>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">REGENERATION + NUTRITION EDUCATION: </h3>
+        <p class="hma-slide-text">
+          Information on how to recover properly after each training session to help maximize training gains.
+        </p>
+      </div>
+      <!-- Slide 10 -->
+      <div class="swiper-slide hma-slide">
+        <h3 class="hma-slide-heading">MOBILITY: </h3>
+        <p class="hma-slide-text">
+          Ability specific mobility program that will address and eliminate various movement deficiencies.  This is also
+          very important to help promote recovery after training. 
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- If you want navigation arrows -->
+  <div class="swiper-button-prev hma-swiper-btn-prev"></div>
+  <div class="swiper-button-next hma-swiper-btn-next"></div>
+  
+  <!-- If you want pagination dots -->
+  <div class="swiper-pagination hma-swiper-pagination"></div>
+</section>

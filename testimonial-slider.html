@@ -1,0 +1,142 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var testimonialSwiper = new Swiper('.hma-testimonial-slider', {
+            slidesPerView: 1,
+            loop: false,
+            speed: 600,
+            navigation: {
+                nextEl: '.hma-testimonial-btn-next',
+                prevEl: '.hma-testimonial-btn-prev',
+            },
+            pagination: {
+                el: '.hma-testimonial-pagination',
+                clickable: true,
+            },
+        });
+    });
+</script>
+
+<section class="hma-testimonial-section">
+    <div class="hma-testimonial-header">
+        <h2 class="hma-testimonial-title">SEE WHAT OUR ATHLETES ARE SAYING</h2>
+        <!-- Optional quote icon in top-right if you wish -->
+        <div class="hma-quote-icon">
+            <!-- Replace with your own SVG or icon font -->
+            <img src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/quote.svg" alt="Quote Icon" />
+        </div>
+    </div>
+
+    <!-- Swiper container -->
+    <div class="swiper hma-testimonial-slider">
+        <!-- Wrapper for slides -->
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide hma-testimonial-slide">
+                <p class="hma-testimonial-text">
+                    Engaging and intense workout sessions that incorporate explosive routines designed
+                    to maximize your strength and endurance.
+                </p>
+
+                <!-- Profile row (image + name + title) -->
+                <div class="hma-testimonial-profile">
+                    <img class="hma-profile-image"
+                        src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/avatar2.svg"
+                        alt="Leslie Alexander" />
+
+                    <div class="hma-profile-info">
+                        <div class="hma-profile-name">
+                            Leslie Alexander
+                            <!-- Verified badge (optional) -->
+                            <img class="hma-verified-badge"
+                                src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/verified.svg"
+                                alt="Verified badge" />
+                        </div>
+                        <div class="hma-profile-title">Pro Athlete</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide hma-testimonial-slide">
+                <p class="hma-testimonial-text">
+                    The personalized training approach helped me improve my endurance and agility.
+                    I feel stronger and more confident on the field.
+                </p>
+
+                <div class="hma-testimonial-profile">
+                    <img class="hma-profile-image"
+                        src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/avatar3.svg"
+                        alt="James Carter" />
+                    <div class="hma-profile-info">
+                        <div class="hma-profile-name">
+                            James Carter
+                            <img class="hma-verified-badge"
+                                src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/verified.svg"
+                                alt="Verified badge" />
+                        </div>
+                        <div class="hma-profile-title">Pro Athlete</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide hma-testimonial-slide">
+                <p class="hma-testimonial-text">
+                    The personalized training approach helped me improve my endurance and agility.
+                    I feel stronger and more confident on the field.
+                </p>
+
+                <div class="hma-testimonial-profile">
+                    <img class="hma-profile-image"
+                        src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/avatar1.svg"
+                        alt="James Carter" />
+                    <div class="hma-profile-info">
+                        <div class="hma-profile-name">
+                            Carter
+                            <img class="hma-verified-badge"
+                                src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/verified.svg"
+                                alt="Verified badge" />
+                        </div>
+                        <div class="hma-profile-title">Pro Athlete</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 23 -->
+            <div class="swiper-slide hma-testimonial-slide">
+                <p class="hma-testimonial-text">
+                    The personalized training approach helped me improve my endurance and agility.
+                    I feel stronger and more confident on the field.
+                </p>
+
+                <div class="hma-testimonial-profile">
+                    <img class="hma-profile-image"
+                        src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/avatar4.svg"
+                        alt="James Carter" />
+                    <div class="hma-profile-info">
+                        <div class="hma-profile-name">
+                            James Carter
+                            <img class="hma-verified-badge"
+                                src="https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/verified.svg"
+                                alt="Verified badge" />
+                        </div>
+                        <div class="hma-profile-title">Pro Athlete</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="hma-testimonial-navigation">
+        <!-- Arrows (if you want them inside the slide container) -->
+        <div class="swiper-button-prev hma-testimonial-btn-prev"></div>
+        <div class="swiper-button-next hma-testimonial-btn-next"></div>
+    </div>
+
+    <!-- Pagination dots -->
+    <div class="swiper-pagination hma-testimonial-pagination"></div>
+</section>
