@@ -116,7 +116,7 @@ div.hma-width-full>.inner {
 /* Container for the entire benefits section */
 .hma-benefits-section {
     max-width: 530px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 2rem 1rem;
     /* background-color: #111; */
     background: linear-gradient(148.85deg, rgba(28, 28, 32, 0.7) 22%, rgba(16, 17, 19, 0.7) 82%);
@@ -138,9 +138,9 @@ div.hma-width-full>.inner {
 
 /* Grid to hold all benefit cards */
 .hma-benefits-grid {
-    display: grid;
+    display: flex;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    flex-wrap: wrap;
 }
 
 /* Each benefit card */
@@ -584,7 +584,7 @@ div.hma-width-full>.inner {
 
 /* Main container styling */
 .hma-testimonial-section {
-    max-width: 465px;
+    max-width: 530px;
     margin: 20px auto;
     padding: 2rem;
     background: linear-gradient(148.85deg, rgba(31, 31, 36, 0.7) 22%, rgba(15, 16, 18, 0.7) 82%);
@@ -742,6 +742,60 @@ div.hma-width-full>.inner {
     gap: 0px;
 }
 
+/* Main container: center it, add some padding */
+.hma-quote-section {
+    margin: 20px auto;
+}
+
+/* Wrapper that holds the gradient background and text */
+.hma-quote-wrapper {
+    position: relative;
+    border-radius: 20px;
+
+    /* Example gradient from darker red at top to black(ish) at bottom.
+       Adjust colors/angles to match your design. */
+    background: linear-gradient(345deg,
+            rgba(176, 32, 36, 1) 0%,
+            /* #B02024 deep red at 0% */
+            rgba(26, 26, 26, 1) 100%
+            /* #1A1A1A dark at 100% */
+        );
+    box-shadow: 0px 0px 0px 1px #FFFFFF0F inset;
+    padding: 3rem 2rem;
+    overflow: hidden;
+}
+
+/* Large quote icon (if you want it positioned in the corner) */
+.hma-big-quote-icon {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    /* make the icon slightly transparent */
+}
+
+.hma-big-quote-icon img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+/* The main quote text */
+.hma-quote-text {
+    margin-left: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 43.2px;
+    color: #FFF;
+    letter-spacing: -1px;
+    z-index: 2;
+    position: relative;
+    margin-top: 30px;
+}
 
 @media(max-width: 1024px) {
 
@@ -774,6 +828,19 @@ div.hma-width-full>.inner {
 
     .hma-get-started-btn-cont {
         text-align: left;
+    }
+
+    .hma-quote-text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hma-benefits-section,
+    .hma-sidebar-banner,
+    .hma-testimonial-section {
+        max-width: 280px;
     }
 }
 
