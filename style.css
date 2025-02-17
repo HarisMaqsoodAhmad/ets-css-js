@@ -1,3 +1,76 @@
+/* Refrigerator Deluxe Regular (400) */
+@font-face {
+    font-family: 'Refrigerator Deluxe';
+    /* Refrigerator Deluxe.otf */
+    src: url('https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73deb19dea2e25adfe.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Refrigerator Deluxe Light (300) */
+@font-face {
+    font-family: 'Refrigerator Deluxe';
+    /* Refrigerator Deluxe Light.otf */
+    src: url('https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73f50026ebcd586e7b.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Refrigerator Deluxe Bold (700) */
+@font-face {
+    font-family: 'Refrigerator Deluxe';
+    /* Refrigerator Deluxe Bold.otf */
+    src: url('https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73df5844c4589ec702.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Refrigerator Deluxe ExtraBold (800) */
+@font-face {
+    font-family: 'Refrigerator Deluxe';
+    /* Refrigerator Deluxe Extrabold.otf */
+    src: url('https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73b0cc1b65b87f9f3c.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Refrigerator Deluxe Heavy (900) */
+@font-face {
+    font-family: 'Refrigerator Deluxe';
+    /* Refrigerator Deluxe Heavy.otf */
+    src: url('https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73deb19d121025adff.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* toxigenesis bd.otf (Bold, 700) */
+@font-face {
+    font-family: 'Toxigenesis BD';
+    /* toxigenesis bd.otf */
+    src: url('https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b7311feb94f6bd529c1.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73df5844c4589ec702.otf   // Refrigerator Deluxe Bold.otf
+https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73b0cc1b65b87f9f3c.otf   // Refrigerator Deluxe Extrabold.otf
+https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73deb19d121025adff.otf   // Refrigerator Deluxe Heavy.otf
+https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73f50026ebcd586e7b.otf   // Refrigerator Deluxe Light.otf
+https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b73deb19dea2e25adfe.otf   // Refrigerator Deluxe.otf
+https://storage.googleapis.com/msgsndr/FwbsjglQBOFnUMRUci2j/media/67b37b7311feb94f6bd529c1.otf   // toxigenesis bd.otf */
+
+.refrigerator-font,
+.refrigerator-font > *,
+.hl-faq-child-heading-text,
+.hl-faq-child-heading-text h4 {
+    font-family: 'Refrigerator Deluxe', sans-serif;
+}
+
+.toxigenesis-font,
+.toxigenesis-font > * {
+    font-family: 'Toxigenesis BD', sans-serif;
+}
+
 div.hma-width-full>.inner {
     max-width: 100% !important;
     padding: 0 5% !important;
@@ -133,7 +206,7 @@ div.hma-width-full>.inner {
     color: #fff;
     margin-bottom: 1.5rem;
     margin-left: 1rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Refrigerator Deluxe', sans-serif;
 }
 
 /* Grid to hold all benefit cards */
@@ -207,7 +280,7 @@ div.hma-width-full>.inner {
     color: #fff;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Refrigerator Deluxe', sans-serif;;
     line-height: 38.4px;
     letter-spacing: -1px;
 }
@@ -241,7 +314,7 @@ div.hma-width-full>.inner {
     text-align: center;
     transition: background-color 0.2s, color 0.2s;
     margin-bottom: 1.5rem;
-    font-family: "Inter", sans-serif;
+    font-family: 'Refrigerator Deluxe', sans-serif;
     text-transform: uppercase;
 }
 
@@ -316,6 +389,7 @@ div.hma-width-full>.inner {
     font-weight: 900;
     margin-bottom: 0.5rem;
     line-height: 48px;
+    font-family: 'Refrigerator Deluxe', sans-serif;
 }
 
 /* Description text */
@@ -420,7 +494,7 @@ div.hma-width-full>.inner {
     font-weight: 900;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Refrigerator Deluxe', sans-serif;
     line-height: 29px;
     letter-spacing: -1px;
 }
@@ -447,10 +521,10 @@ div.hma-width-full>.inner {
     color: #111;
     font-size: 22px;
     font-weight: 900;
-    padding: 0.75rem 2rem;
+    padding: 10px 50px;
     border-radius: 9999px;
     transition: background-color 0.2s, color 0.2s;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Refrigerator Deluxe', sans-serif;
 }
 
 .hma-gs-button:hover {
@@ -516,7 +590,7 @@ div.hma-width-full>.inner {
     color: #B02024;
     text-transform: uppercase;
     font-weight: 800;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Refrigerator Deluxe', sans-serif;
     line-height: 30px;
     margin-bottom: 1rem;
 }
@@ -608,7 +682,7 @@ div.hma-width-full>.inner {
     font-weight: 800;
     line-height: 28px;
     text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Refrigerator Deluxe', sans-serif;
     letter-spacing: -1px;
 }
 
@@ -785,9 +859,9 @@ div.hma-width-full>.inner {
 /* The main quote text */
 .hma-quote-text {
     margin-left: 0.5rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Refrigerator', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 30px;
     text-transform: uppercase;
     line-height: 43.2px;
     color: #FFF;
