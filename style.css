@@ -147,25 +147,25 @@ div.hma-width-full>.inner {
 }
 
 .hma-faq .faq-contained-child .hl-faq-child-heading:not(.active) .hl-faq-child-heading-icon::before {
-    background: url('https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/plus.svg') no-repeat 0 0;
-    background-color: #fff;
+    background: url('https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/plus-square.svg') no-repeat 0 0;
+    /* background-color: #fff; */
     content: '' !important;
     position: absolute;
     right: 20px;
     transform: translateY(-50%);
-    width: 26px;
-    height: 26px;
+    width: 31px;
+    height: 31px;
 }
 
 .hma-faq .faq-contained-child .hl-faq-child-heading.active .hl-faq-child-heading-icon::before {
-    background: url('https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/minus.svg') no-repeat 0 0;
-    background-color: #fff;
+    background: url('https://dev.clientflow.ai/wp-content/uploads/2024/08/est-assets/minus-square.svg') no-repeat 0 0;
+    /* background-color: #fff; */
     content: '' !important;
     position: absolute;
     right: 20px;
     transform: translateY(-50%);
-    width: 26px;
-    height: 26px;
+    width: 31px;
+    height: 31px;
 }
 
 #faq-DkKwnt-s_s .hl-faq-child-heading .hl-faq-child-heading-icon:before,
