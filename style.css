@@ -883,6 +883,15 @@ div.hma-width-full>.inner {
     margin-top: 30px;
 }
 
+.hma-main-row>.inner {
+    align-items: flex-start;
+}
+
+.inner div.hma-sidebar {
+    position: sticky;
+    top: 1rem;
+}
+
 @media (min-width: 1160px) {
     .hma-benefit-card {
         width: 48%;
