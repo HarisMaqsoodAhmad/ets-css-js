@@ -883,6 +883,12 @@ div.hma-width-full>.inner {
     margin-top: 30px;
 }
 
+@media (min-width: 1160px) {
+    .hma-benefit-card {
+        width: 48%;
+    }
+}
+
 @media(max-width: 1024px) {
 
     .hma-benefits-section,
