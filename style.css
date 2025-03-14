@@ -979,4 +979,22 @@ div.hma-width-full>.inner {
     .hma-footer-1 {
         background-position: top;
     }
+
+    .hma-rating-text {
+        line-height: 15px;
+    }
+
+    .hma-banner-button {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #custom-code-IIoCkE86L3,
+    .hma-benefits-section,
+    .hma-sidebar-banner,
+    .hma-testimonial-section {
+        width: 100%;
+    }
 }
