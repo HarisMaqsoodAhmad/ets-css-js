@@ -883,11 +883,11 @@ div.hma-width-full>.inner {
     margin-top: 30px;
 }
 
-.hma-main-row>.inner {
+/* .hma-main-row>.inner {
     align-items: flex-start;
-}
+} */
 
-.inner div.hma-sidebar {
+.inner div#custom-code-l_Kt6oIrYH {
     position: sticky;
     top: 1rem;
 }
