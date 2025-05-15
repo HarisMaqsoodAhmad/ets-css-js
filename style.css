@@ -744,7 +744,8 @@ div.hma-width-full>.inner {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #fff;
-    /* white ring around avatar */
+    display: none;
+    /* Hide for now */
 }
 
 .hma-profile-info {
@@ -769,6 +770,8 @@ div.hma-width-full>.inner {
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     line-height: 20.3px;
+    display: none;
+    /* Hide for now */
 }
 
 .hma-verified-badge {
@@ -890,6 +893,16 @@ div.hma-width-full>.inner {
 .inner div#custom-code-l_Kt6oIrYH {
     position: sticky;
     top: 1rem;
+}
+
+.custom-code-IIoCkE86L3 {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .hma-main-row>.inner {
+        gap: 50px;
+    }
 }
 
 @media (min-width: 1160px) {
