@@ -380,10 +380,8 @@ div.hma-width-full>.inner {
     padding: 1rem;
     /* border-left: 0.5px solid rgba(224, 0, 0, 0.5); */
     border-left: 0.5px solid transparent;
-
     /* 2) The gradient you want (top to bottom) */
     border-image: linear-gradient(180deg, #B02024 0%, rgba(176, 32, 36, 0) 100%);
-
     /* 3) border-image-slice is mandatory for the gradient to display */
     border-image-slice: 1;
 }
@@ -678,6 +676,7 @@ div.hma-width-full>.inner {
     border-radius: 20px;
     position: relative;
     padding-bottom: 3rem;
+    margin-right: 0;
 }
 
 /* Header with section title and optional quote icon */
@@ -840,7 +839,6 @@ div.hma-width-full>.inner {
 .hma-quote-wrapper {
     position: relative;
     border-radius: 20px;
-
     /* Example gradient from darker red at top to black(ish) at bottom.
        Adjust colors/angles to match your design. */
     background: linear-gradient(345deg,
